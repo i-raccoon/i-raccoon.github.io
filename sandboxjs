@@ -1,0 +1,39 @@
+var xPos = 200;
+var yPos = 1;
+
+var xPos1 = 0;
+var yPos1 = 200;
+
+var ballWidth = 20;
+var ballHeight = 20;
+
+var window = 10;
+
+draw = function() {
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, ballWidth, ballHeight);
+    fill(10, 10, 9);
+    rect(xPos1, yPos1, 15, 10);
+   
+    fill (5, 5, 5);
+    rect(0, 399, 41, -128);
+    rect(52, 399, 52, -174);
+    rect(103, 432, 86, -273);
+    rect(232, 441, 67, -110);
+    rect(328, 399, 41, -128);
+    
+    fill (165, 163, 240);
+    rect(6, 283, window, window);
+    rect(59, 292, window, window);
+    rect(120, 180, window, window);
+    rect(151, 237, window, window);
+    rect(340, 281, window, window);
+    rect(252, 362, window, window);
+
+    yPos += 1;
+    xPos1 += 1;
+    
+    ballWidth += 2;
+    ballHeight += 2;
+};
